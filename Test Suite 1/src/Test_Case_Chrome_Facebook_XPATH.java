@@ -29,7 +29,7 @@ public class Test_Case_Chrome_Facebook_XPATH {
 		ChromeDriver.findElement(By.cssSelector("[id='pass']")).sendKeys("123456");
 		ChromeDriver.findElement(By.cssSelector("*[value='Log In']")).click();
 		
-		ChromeDriver.quit(); //Close all the browser opened for the testing
+		//ChromeDriver.quit(); //Close all the browser opened for the testing
 		
 	}
 
