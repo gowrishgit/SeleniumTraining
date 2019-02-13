@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Facebook_XPATH {
+public class TC6_Facebook_XPATH {
 
 	public static void main(String[] args) {
 

@@ -1,7 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Firefox_Setup {
+public class TC2_Firefox_Setup {
 
 	public static void main(String[] args) {
 

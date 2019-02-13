@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Different_Locators {
+public class TC4_Different_Locators {
 
 	public static void main(String[] args) {
 

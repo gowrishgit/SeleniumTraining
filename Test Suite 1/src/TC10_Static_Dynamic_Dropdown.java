@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Spicejet_Dropdown {
+public class TC10_Static_Dynamic_Dropdown {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
