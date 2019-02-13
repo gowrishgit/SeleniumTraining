@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test_Case_Chrome_Parent_Child {
+public class Parent_Child_Absolute {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

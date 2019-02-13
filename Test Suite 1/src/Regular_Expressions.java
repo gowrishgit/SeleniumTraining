@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test_Case_Chrome_SF_RegExp_E2E {
+public class Regular_Expressions {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

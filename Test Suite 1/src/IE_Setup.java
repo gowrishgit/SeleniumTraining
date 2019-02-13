@@ -1,7 +1,7 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-public class Test_Case_IE {
+public class IE_Setup {
 
 	public static void main(String[] args) {
 
