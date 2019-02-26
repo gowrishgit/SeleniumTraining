@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TC10_Static_Dynamic_Dropdown {
+public class TC10_Static_DynamicDropdown_RadioButton { 
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
@@ -13,11 +13,23 @@ public class TC10_Static_Dynamic_Dropdown {
 		driver.manage().window().maximize();
 		driver.get("http://www.spicejet.com/");
 		System.out.println(driver.getTitle());
-		
-		/* Selecting number of passengers */
+
+		// Dynamic Dropdown to select the destinations
+		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		driver.findElement(By.xpath("//a[@value='BLR']")).click();
+		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
+		// selecting second index from 2 nodes with same values
+		// driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+		// Without using indexing with parent child concept
+		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']"))
+				.click();
+		// Selecting calendar
+		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+		Thread.sleep(5000L);
+		// Selecting number of passengers
 		driver.findElement(By.xpath("//div[@id='divpaxinfo']")).click();
 		Thread.sleep(1000L);
-		/* Using WHILE Loop */
+		// Using WHILE Loop
 		int i = 1;
 		while (i < 5) {
 			System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
@@ -41,19 +53,12 @@ public class TC10_Static_Dynamic_Dropdown {
 		s.selectByValue("USD");
 		Thread.sleep(1000L);
 		s.selectByVisibleText("INR");
-		Thread.sleep(1000L);
-		s.selectByVisibleText("Select");
-		Thread.sleep(1000L);
-		
-		/* Dynamic Dropdown to select the destinations */
-		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
-		driver.findElement(By.xpath("//a[@value='BLR']")).click();
-		driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
-		// selecting second index from 2 nodes with same values
-		//driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
-		//Without using indexing with parent child concept
-		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
-		Thread.sleep(2000L);
-		driver.close();
+
+		// Selecting Check box
+		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
+		System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
+
 	}
 }
