@@ -14,9 +14,9 @@ public class TC27_Screeshots {
 		System.setProperty("webdriver.chrome.driver", "E:\\Selenium Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("");
+		driver.get("https://www.google.com/");
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("E://screenshot/screenshot.png"));
+		FileUtils.copyFile(src, new File("c://screenshot/screenshot.png")); // FileUtils will copy the file to local machine
 		
 		
 		
