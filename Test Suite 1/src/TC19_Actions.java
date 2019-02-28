@@ -19,7 +19,7 @@ public class TC19_Actions {
 		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().sendKeys(Keys.SHIFT).sendKeys("hello")
 				.doubleClick().build().perform();
 		// move to specific element
-		WebElement move = driver.findElement(By.id("nav-link-yourAccount"));
+		WebElement move = driver.findElement(By.xpath("//div[@class='nav-right']//div//a[2]"));
 		//Right click
 		a.moveToElement(move).contextClick().build().perform();
 

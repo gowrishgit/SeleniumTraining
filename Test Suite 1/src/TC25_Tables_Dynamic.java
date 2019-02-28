@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 //Getting all the batsmens score and verifying with the total score
-public class TC25_Tables {
+public class TC25_Tables_Dynamic {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

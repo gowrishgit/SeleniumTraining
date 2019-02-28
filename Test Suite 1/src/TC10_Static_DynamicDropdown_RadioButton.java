@@ -24,7 +24,7 @@ public class TC10_Static_DynamicDropdown_RadioButton {
 		driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']"))
 				.click();
 		// Selecting calendar
-		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
+		driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[5]/td[3]/a")).click();
 		Thread.sleep(5000L);
 		// Selecting number of passengers
 		driver.findElement(By.xpath("//div[@id='divpaxinfo']")).click();

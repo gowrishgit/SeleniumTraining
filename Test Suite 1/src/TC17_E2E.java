@@ -26,7 +26,7 @@ public class TC17_E2E {
 				.click();
 
 		// Selecting calendar
-		driver.findElement(By.cssSelector("a.ui-state-default.ui-state-highlight.ui-state-active")).click();
+		driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[5]/td[3]/a")).click();
 		Thread.sleep(5000L);
 
 		// Seleecting radio button and checking the destination text box

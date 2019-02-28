@@ -17,14 +17,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class PassionInc_TC1 {
+public class TC29_GlobalVariable {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 
 		WebDriver driver = null;
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(
-				"E:\\Github\\SeleniumTraining\\Test Suite 1\\src\\datadriven.properties");
+		FileInputStream fis = new FileInputStream("E:\\Github\\SeleniumTraining\\Test Suite 1\\src\\datadriven.properties");
 		prop.load(fis);
 
 		if (prop.getProperty("browser").equals("firefox")) {
